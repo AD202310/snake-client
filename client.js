@@ -14,7 +14,7 @@ const connect = function () {
   })
 
   conn.write("Name: AAA");
-  setTimeout(() => conn.write("Move: up"), 1500);
+  setTimeout(() => conn.write("Move: up"), 50);
   
   conn.on("data", (data) => {
     console.log(data);
