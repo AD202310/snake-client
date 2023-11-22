@@ -13,12 +13,9 @@ const connect = function () {
     console.log("Successfully connected to game server.");
   })
 
- 
   conn.write("Name: AAA");
-
-  setTimeout(() => conn.write("Move: up"), 50);
+  setTimeout(() => conn.write("Move: up"), 1500);
   
-
   conn.on("data", (data) => {
     console.log(data);
   })
